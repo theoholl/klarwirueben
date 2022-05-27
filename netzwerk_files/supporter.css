@@ -1,0 +1,27 @@
+html, body, main {
+  height: 100%;
+}
+
+.text {
+  text-align: center;
+  font-size: 2rem; /* https://www.mediaevent.de/css/font-size-rem.html */
+}
+
+.has-text-red {
+  color: red;
+}
+
+.divider {
+  height: 50%;
+  width: 2px;
+  background-color: #5a5a5a;
+}
+
+/* https://bulma.io/documentation/overview/responsiveness/#breakpoints */
+@media (max-width: 768px) {
+   .divider {
+    height: 2px;
+    width: 75%;
+    margin: 0 auto;
+  }
+}

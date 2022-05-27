@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Unterstützernetzwerk</title>
+    
+    <link rel="stylesheet" href="netzwerk_files/supporter.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  </head>
+
+  <body class="section">
+    <main class="columns is-justify-content-space-evenly is-align-items-center">
+      <section class="column is-two-fifths is-flex is-justify-content-center is-align-items-center section">
+        <div class="text">
+          <p>Klar!</p>
+          <p><em class="has-text-red">Wir</em> üben.</p>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <section class="column is-two-fifths section">
+        <form
+          action="/api/add-supporter"
+          method="post"
+          class="form"
+        >
+
+        <div class="block">
+          <div class="field is-horizontal">
+            <div class="field-label is-normal has-text-left">
+              <label class="label">Name</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <p class="control">
+                  <input class="input" type="text" name="name" placeholder="Dein Name">
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-label is-normal has-text-left">
+              <label class="label">E-Mail</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <p class="control">
+                  <input class="input" type="email" name="email" placeholder="Deine E-Mail-Adresse">
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="is-flex is-flex-direction-column block">
+            <label class="checkbox my-2">
+              <input type="checkbox" class="mr-1" name="piano_teacher">
+              Klavierlehrer:in
+            </label>
+            <label class="checkbox my-2">
+              <input type="checkbox" class="mr-1" name="piano_student">
+              Klavierschüler:in
+            </label>
+            <label class="checkbox my-2">
+              <input type="checkbox" class="mr-1" name="instrument_teacher">
+              Instrumentallehrer:in
+            </label>
+            <label class="checkbox my-2">
+              <input type="checkbox" class="mr-1" name="music_teacher">
+              Musiklehrer:in
+            </label>
+            <label class="checkbox my-2">
+              <input type="checkbox" class="mr-1" name="institution">
+              Institution (z. B. Musikschule)
+            </label>
+            <label class="checkbox my-2">
+              <input type="checkbox" class="mr-1" name="others">
+              Freunde / Unterstützer:innen
+            </label>
+          </div>
+
+
+          <div class="block is-flex is-justify-content-center">
+            <button type="submit" class="button is-success mt-3">Unterstützen</button>
+          </div>
+          
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
